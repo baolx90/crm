@@ -1,0 +1,30 @@
+{
+    "name": "lamxuanbao/auth",
+    "description": "Setup",
+    "authors": [
+        {
+            "name": "lamxuanbao",
+            "email": "lamxuanbao.tb@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LamXuanBao\\Auth\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0",
+        "tymon/jwt-auth": "^2.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LamXuanBao\\Auth\\ServiceProvider"
+            ],
+            "aliases": {
+                "CoreAuth": "LamXuanBao\\Auth\\Facades\\AuthFacade"
+            }
+        }
+    }
+}

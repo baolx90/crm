@@ -1,0 +1,29 @@
+{
+    "name": "lamxuanbao/shopify",
+    "description": "Shopify package",
+    "authors": [
+        {
+            "name": "Lâm Xuân Bảo",
+            "email": "lamxuanbao.tb@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LamXuanBao\\Shopify\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LamXuanBao\\Shopify\\ServiceProvider"
+            ],
+            "aliases": {
+                "Shopify": "LamXuanBao\\Shopify\\Facades\\ShopifyFacade"
+            }
+        }
+    },
+    "require": {
+        "laravel/framework": "^11.0",
+        "firebase/php-jwt": "^6.10"
+    }
+}

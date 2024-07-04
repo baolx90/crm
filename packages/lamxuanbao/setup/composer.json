@@ -1,0 +1,29 @@
+{
+    "name": "lamxuanbao/setup",
+    "description": "Setup",
+    "authors": [
+        {
+            "name": "lamxuanbao",
+            "email": "lamxuanbao.tb@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LamXuanBao\\SetUp\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LamXuanBao\\SetUp\\ServiceProvider"
+            ],
+            "aliases": {
+                "SetUp": "LamXuanBao\\SetUp\\Facades\\SetUpFacade"
+            }
+        }
+    }
+}
